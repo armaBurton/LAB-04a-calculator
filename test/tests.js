@@ -1,11 +1,11 @@
 // IMPORT MODULES under test here:
 // import { add } from '../calculator.js';
+import { add } from '../calculations.js';
+
 
 const test = QUnit.test;
 
-function add(x, y){
-    return(x + y);
-};
+
 
 // name your test by what it is testing
 test('add 5 + 3', (expect) => {
