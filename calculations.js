@@ -35,5 +35,5 @@ export function volOfCylinder(r, h){
 }
 
 export function areaOfTriangle(x, y){
-    reurn((x * y) / 2);
+    return((x * y) / 2);
 }
