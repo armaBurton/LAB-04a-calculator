@@ -11,14 +11,17 @@ main {
     background-color: ghostwhite;
     margin: 0 auto;
     padding: 30px 15px 20px 15px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 section {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed blue;
 }
 
 header {
@@ -55,9 +58,24 @@ footer {
 }
 
 .f1{
-    width: 200px;
+    
+    width: 213px;
 }
 
 .f2 {
+    margin-top: 3px;
     width: 200px;
+    float: right;
+}
+
+.do-the-thing{
+    width: 213px;
+}
+
+.answer{
+    width: 213px;
+    float: right;
+    padding-top: 5px;
+    text-align: right;
+    background-color: lightyellow;
 }
