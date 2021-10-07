@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { add } from '../calculator.js';
 import { add, multiply, subtract, divide, modulo, integerDivision, hypotenuse } from '../calculations.js';
-import { volOfSphere, volOfCylinder } from '../calculations.js';
+import { volOfSphere, volOfCylinder, areaOfTriangle } from '../calculations.js';
 
 
 const test = QUnit.test;
@@ -171,11 +171,27 @@ test('volume of cylinder 12 x 5', (expect) => {
     // Set up your arguments and expectations
     const r = 12;
     const h = 5;
-    const expected = 2261.946710584651    ;
+    const expected = 2261.946710584651;
     
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = volOfCylinder(r, h); // use your function here
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
+
+test('area of a triangle 12 x 5', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const x = 12;
+    const y = 5;
+    const expected = 30;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = areaOfTriangle(x, y); // use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result

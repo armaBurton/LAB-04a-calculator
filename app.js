@@ -1,6 +1,6 @@
 // import functions
 import { add, subtract, multiply, divide, modulo, integerDivision, hypotenuse, volOfCylinder } from './calculations.js';
-import { volOfSphere } from '../calculations.js';
+import { volOfSphere, areaOfTriangle } from '../calculations.js';
 
 // reference needed DOM elements
 
@@ -47,6 +47,11 @@ const cylinderNum1 = document.getElementById('cylinder-num1');
 const cylinderNum2 = document.getElementById('cylinder-num2');
 const cylinderButton = document.getElementById('cylinder-button');
 const cylinderAnswer = document.getElementById('cylinder-answer');
+
+const triangleNum1 = document.getElementById('triangle-num1');
+const triangleNum2 = document.getElementById('triangle-num2');
+const triangleButton = document.getElementById('triangle-button');
+const triangleAnswer = document.getElementById('triangle-answer');
 // set event listeners 
 // get user input(s)
 // do any needed work with the value(s)
@@ -156,4 +161,28 @@ cylinderButton.addEventListener('click', () => {
     const sum = volOfCylinder(num1, num2);
 
     cylinderAnswer.textContent = sum;
+});
+
+cylinderButton.addEventListener('click', () => {
+    let num1 = cylinderNum1.value;
+    let num2 = cylinderNum2.value;
+    
+    num1 = Number(num1);
+    num2 = Number(num2);
+    
+    const sum = volOfCylinder(num1, num2);
+
+    cylinderAnswer.textContent = sum;
+});
+
+triangleButton.addEventListener('click', () => {
+    let num1 = triangleNum1.value;
+    let num2 = triangleNum2.value;
+    
+    num1 = Number(num1);
+    num2 = Number(num2);
+    
+    const sum = areaOfTriangle(num1, num2);
+
+    triangleAnswer.textContent = sum;
 });

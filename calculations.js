@@ -33,3 +33,7 @@ export function volOfSphere(x){
 export function volOfCylinder(r, h){
     return(Math.PI * Math.pow(r, 2) * h);
 }
+
+export function areaOfTriangle(x, y){
+    reurn((x * y) / 2);
+}
